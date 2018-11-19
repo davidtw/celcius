@@ -1,0 +1,30 @@
+{
+  "name": "celcius",
+  "version": "1.0.0",
+  "description": "An mqtt heating manager for connected radiators",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidtw/celcius.git"
+  },
+  "author": "David Twigger <contact@davidtwigger.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/davidtw/celcius/issues"
+  },
+  "homepage": "https://github.com/davidtw/celcius#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "lodash": "^4.17.11",
+    "node-persist": "^3.0.1",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0"
+  }
+}
