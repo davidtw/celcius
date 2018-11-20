@@ -7,15 +7,6 @@ const path = require('path')
 const client = require('./mqtt/mqtt')
 
 Config.loadFromStorage().then(config => {
-        // if(!config.mqttOptions) {
-        //     config.mqttOptions = {
-        //         host: '192.168.1.84',
-        //         port: '1883',
-        //         username: 'david',
-        //         password: 'tart!fl3tt3',
-        //     }
-        //     config.commit()
-        // }
         app.use(bodyParser.urlencoded({ extended: true }))
         app.use(bodyParser.json())
         console.log(config.rooms)
