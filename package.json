@@ -4,6 +4,7 @@
   "description": "An mqtt heating manager for connected radiators",
   "main": "index.js",
   "scripts": {
+    "start": "node src/index.js",
     "test": "mocha --recursive"
   },
   "repository": {
@@ -20,6 +21,7 @@
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "lodash": "^4.17.11",
+    "mqtt": "^2.18.8",
     "node-persist": "^3.0.1",
     "uuid": "^3.3.2"
   },

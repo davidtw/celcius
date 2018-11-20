@@ -1,4 +1,5 @@
 const room = require('./room')
+const radiator = require('./radiator')
 const _ = require('lodash')
 function router(app, express, config) {
     const router = express.Router()
@@ -7,6 +8,7 @@ function router(app, express, config) {
     //     res.json({ message: 'Yeay!!' })
     // })
     room(router, config)
+    radiator(router, config)
     app.use('/api', router)
 }
 

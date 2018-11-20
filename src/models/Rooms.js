@@ -3,7 +3,10 @@ const Room = require('./Room')
 
 class Rooms {
     constructor(rooms) {
-        this.rooms = _.map(rooms, room => new Room(room.name, room.radiators, room.temperatureTopic, room.id))
+        this.rooms = _.map(rooms, room => {
+            const radiators = room.radiators.radiators || room.radiators
+            return new Room(room.name, radiators, room.temperatureTopic, room.id)
+        })
     }
 
     update(room) {

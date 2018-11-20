@@ -1,7 +1,7 @@
 const Room = require('../models/Room')
 module.exports = function(router, config) {
     router.get('/rooms', function(req, res) {
-        res.json(config.rooms.toJsonString())
+        res.json(config.rooms.forJson())
     })
 
     router.post('/room', function(req, res) {

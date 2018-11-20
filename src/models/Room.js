@@ -1,12 +1,12 @@
 const Radiators = require('./Radiators')
-const _ = require('lodash')
+const uuidv1 = require('uuid/v1')
 
 class Room {
     constructor(name, radiators, temperatureTopic, id = null) {
         this.name = name
         this.radiators = new Radiators(radiators)
         this.temperatureTopic = temperatureTopic
-        this.id = id || _.uniqueId()
+        this.id = id || uuidv1()
     }
 
     forJson() {

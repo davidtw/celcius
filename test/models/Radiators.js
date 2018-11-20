@@ -14,7 +14,6 @@ describe('Radiators collection test', function () {
             {id: 1, name: 'radiator 1', mqttTopic: '/radiator/1'},
             {id: 2, name: 'radiator 2', mqttTopic: '/radiator/2'},
         ])
-
         expect(radiators.radiators.length).to.equal(2)
         expect(radiators.radiators[0]).to.be.an('object')
         expect(radiators.radiators[1]).to.be.an('object')
